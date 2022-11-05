@@ -1,1 +1,1 @@
-[Deploy]('https://leagueofapis.netlify.app')
+https://leagueofapis.netlify.app  
