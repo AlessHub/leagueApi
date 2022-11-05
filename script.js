@@ -84,7 +84,7 @@ async function leftArrowHandler() {
     imageCounter.innerHTML = imageCount;
 
     console.log('champName =', imageName);
-    const imgResponse = await fetch(`http://ddragon.leagueoflegends.com/cdn/12.21.1/data/en_US/champion/${imageName}.json`);
+    const imgResponse = await fetch(`https://ddragon.leagueoflegends.com/cdn/12.21.1/data/en_US/champion/${imageName}.json`);
     const imgData = await imgResponse.json();
     console.log(imgData);
     let cardImgData = imgData.data[imageName];
@@ -107,7 +107,7 @@ async function rightArrowHandler() {
         }
         imageCounter.setAttribute('data-count', imageCount);
         imageCounter.innerHTML = imageCount;
-        const imgResponse = await fetch(`http://ddragon.leagueoflegends.com/cdn/12.21.1/data/en_US/champion/${imageName}.json`);
+        const imgResponse = await fetch(`https://ddragon.leagueoflegends.com/cdn/12.21.1/data/en_US/champion/${imageName}.json`);
         const imgData = await imgResponse.json();
         let cardImgData = imgData.data[imageName];
         let imageNumber = image.src.match(/\d+/g);
